@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MisofoMe - Oefening toevoegen</title>
+		<link rel="stylesheet" type="text/css" href="stylesheet.css">
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script src="script.js"></script>
+	</head>
+	<body data-spy="scroll" data-target="#scrollMenu" data-offset="20">
+		<nav id="scrollMenu">
+			<ul>
+				<li class="active"><a id="nav1" href="#question1">1</a></li>
+				<li class="active"><a id="nav2" href="#question2">2</a></li></li>
+				<li class="active"><a id="nav3" href="#question3">3</a></li>
+				<li class="inactive"><a id="nav4" href="#question4">4</a></li>
+				<li class="inactive"><a id="nav5" href="#question5">5</a></li>
+				<li class="inactive"><a id="nav6" href="#question6">6</a></li>
+			</ul>
+		</nav>
+<!-- 		</div> -->
+
+		<form class="form">
+			
+			
+
+			<!-- 		Vraag 1		 -->	
+			<fieldset id="question1" class="section current">
+				<div class="box">
+				<legend>Hoe zou je je oefening in het kort beschrijven?</legend>
+				<label class="label" for="description">Beschrijving</label><textarea id="description" placeholder="Kort en bondig alsjeblieft, maximaal 100 tekens"></textarea>
+				<footer class="backnext">
+					<a href="#" class="back gone">Back</a>
+					<a href="#question2" class="next">Next</a>
+				</footer>
+				</div>
+			</fieldset>
+			
+			
+			
+			
+			<!-- 		Vraag 2		 -->			
+			<fieldset id="question2" class="section">
+				<div class="box">
+				<legend>Je maakt me nieuwsgierig! Bevat de oefening:</legend>
+				<div class="checkbox">
+				    <input type="checkbox" id="text" name="text">
+					<label for="text">Tekst</label>
+				</div>
+				<div class="checkbox">
+				    <input type="checkbox" id="video" name="video">
+					<label for="video">Video</label>
+				</div>
+				<div class="checkbox">
+				    <input type="checkbox" id="audio" name="audio">
+					<label for="audio">Audio</label>
+				</div>
+				<div class="checkbox">
+				    <input type="checkbox" id="image" name="image">
+					<label for="image">Afbeelding</label>
+				</div>
+					<footer class="backnext">
+						<a href="#question1" class="back">Back</a>
+						<a href="#question3" class="next">Next</a>
+					</footer>
+				</div>
+			</fieldset>
+			
+			
+			<!-- 		Vraag 3		 -->			
+			<fieldset id="question3" class="section">
+				<div class="box">
+				<legend>Klinkt als een goede oefening! Hoe zou je hem noemen?</legend>
+				<label class="label" for="title">Titel</label><input type="text" id="title">
+				<footer class="backnext">
+					<a href="#question2" class="back">Back</a>
+					<a href="#question4" class="next">Next</a>
+				</footer>
+				</div>
+			</fieldset>			
+
+
+
+
+			<!-- 		Vraag 4		 -->			
+			<fieldset id="question4" class="section">
+				<div class="box">
+				<legend>Zou de oefening een gevoelige trigger kunnen zijn voor anderen?</legend>
+				<div class="radio">
+					
+					<input type="radio" name="yes" value="yes"><label for="yes">Ja</label>
+					<input type="radio" name="no" value="no"><label for="no">Nee</label>
+		
+				</div>
+				<p>Omdat...</p>
+				<label class="label" for="description">Beschrijving</label><textarea id="description"></textarea>
+					<footer class="backnext">
+						<a href="#question3" class="back">Back</a>
+						<a href="#question5" class="next">Next</a>
+					</footer>
+				</div>
+			</fieldset>	
+
+			
+			<!-- 		Vraag 5		 -->			
+			<fieldset id="question5" class="section">
+				<div class="box">
+				<legend>En in welke categorie hoort je oefening?</legend>
+				<div class="checkbox">
+				    <input type="checkbox" id="relaxation" name="relaxation">
+					<label for="relaxation">Relaxatie</label>
+				</div>
+				<div class="checkbox">
+				    <input type="checkbox" id="concentration" name="concentration">
+					<label for="concentration">Concentratie</label>
+				</div>
+				<div class="checkbox">
+				    <input type="checkbox" id="association" name="association">
+					<label for="association">Associatie</label>
+				</div>
+				<div class="checkbox">
+				    <input type="checkbox" id="other" name="other">
+					<label for="other">Overig</label>
+				</div>
+					<footer class="backnext">
+						<a href="#question4" class="back">Back</a>
+						<a href="#question6" class="next">Next</a>
+					</footer>
+				</div>
+			</fieldset>						
+			
+			
+			
+			<!-- 		Vraag 6		 -->			
+			<fieldset id="question6" class="section">
+				<div class="box">
+				<legend>Deze oefening helpt mij in de volgende situatie:</legend>
+				<label class="label" for="helpful">Helpful</label><textarea placeholder="Een plek, bijvoorbeeld, trein, restaurant, bioscoop, etc." id="helpful"></textarea>
+					<footer class="backnext">
+						<a href="#question5" class="back">Back</a>
+						<a href="#" class="next">Done!</a>
+					</footer>
+				</div>
+			</fieldset>	
+
+			
+		</form>
+		
+
+	</body>
+</html>
