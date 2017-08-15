@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MisofoMe - Oefening toevoegen</title>
+		<link rel="stylesheet" type="text/css" href="stylesheet.css">
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	</head>
+	<body data-spy="scroll" data-target="#scrollMenu" data-offset="20">
+		<nav id="scrollMenu">
+			<ul>
+				<li class="active"><a id="nav1" href="index.html">1</a></li>
+				<li class="active"><a id="nav2" href="question2.html">2</a></li></li>
+				<li class="super active"><a id="nav3" href="#">3</a></li>
+				<li class="inactive"><a id="nav4" href="#">4</a></li>
+				<li class="inactive"><a id="nav5" href="#">5</a></li>
+				<li class="inactive"><a id="nav6" href="#">6</a></li>
+				<li class="inactive"><a id="nav7" href="#">7</a></li>
+			</ul>
+		</nav>
+		<form class="form">
+			
+			<!-- 		Vraag 3: Oefening		 -->			
+			<fieldset id="question3" class="section">
+				<div class="box">
+					<legend>We zijn benieuwd naar je oefening!</legend>
+					<p>Ga je gang, je kunt zowel tekst als video, audio en afbeeldingen toevoegen</p>
+					<div class="checkbox">
+						<input type="checkbox" id="text" name="text">
+						<label for="text">Tekst</label>
+						<div class="cbtext">
+							<label class="label" for="description">Beschrijving</label>
+							<textarea id="description" placeholder="Vul hier de oefening in"></textarea>
+						</div>
+					</div>
+					<div class="checkbox video">
+				   		<input type="checkbox" id="video" name="video">
+				   		<label for="video">Video</label>
+				   		<div class="cbvideo">
+							<a>Upload je video<img src="img/upload.png" class="upload"></a>
+							<p>Of plak hier de link naar je YouTube video</p>
+							<label class="label" for="title">videolink</label><input type="text" id="videolink" placeholder="http://">
+						</div>
+					</div>
+					<div class="checkbox audio">
+				    	<input type="checkbox" id="audio" name="audio">
+						<label for="audio">Audio</label>
+						<div class="cbaudio">
+							<p>Plak hier de link naar de audiobestand(en)</p>
+							<label class="label" for="title">videolink</label><input type="text" id="videolink" placeholder="http://">
+						</div>
+					</div>
+					<div class="checkbox image">
+				   		<input type="checkbox" id="image" name="image">
+				   		<label for="image">Afbeelding</label>
+				   		<div class="cbimage">
+							<p>Voeg hier maximaal vijf foto's toe</p>
+							<span class="addimage">+</span>
+							<span class="addimage">+</span>
+							<span class="addimage">+</span>
+							<span class="addimage">+</span>
+							<span class="addimage">+</span>
+						</div>
+					</div>
+				</div>
+			<footer class="backnext">
+				<a href="question2.html" class="back">Terug</a>
+				<a href="question4.html" class="next">Volgende</a>
+			</footer>
+			</fieldset>
+		</form>
+				<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+		<script src="script.js"></script>
+	</body>
+</html>
+
