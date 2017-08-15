@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MisofoMe - Oefening toevoegen</title>
+		<link rel="stylesheet" type="text/css" href="stylesheet.css">
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script src="script.js"></script>
+	</head>
+	<body data-spy="scroll" data-target="#scrollMenu" data-offset="20">
+		<nav id="scrollMenu">
+			<ul>
+				<li class="active"><a id="nav1" href="index.html">1</a></li>
+				<li class="active"><a id="nav2" href="question2.html">2</a></li></li>
+				<li class="active"><a id="nav3" href="question3.html">3</a></li>
+				<li class="active"><a id="nav4" href="question4.html">4</a></li>
+				<li class="active"><a id="nav5" href="question5.html">5</a></li>
+				<li class="active"><a id="nav6" href="question6.html">6</a></li>
+				<li class="super active"><a id="nav7" href="#">7</a></li>
+			</ul>
+		</nav>
+		<form class="form">
+			
+			<!-- 		Vraag 7: Trigger		 -->			
+			<fieldset id="question7" class="section">
+				<div class="box">
+					<legend>Tot slot: Is er een kans dat je oefening een gevoelige trigger bevat voor anderen?</legend>
+					<div class="radio">
+						<input id="ja" type="radio" name="trigger" value="ja">
+						<label for="ja">Ja</label><br>
+						<input id="nee" type="radio" name="trigger" value="nee">
+						<label for="nee">Nee</label>
+						<div class="triggertext">
+							<label class="label" for="description">Trigger</label>
+							<textarea id="description" placeholder="Geef een korte beschrijving wat een trigger kan zijn voor anderen"></textarea>
+						</div>
+					</div>
+				</div>
+			<footer class="backnext">
+				<a href="question6.html" class="back">Terug</a>
+				<a href="final.html" class="next">Controleer</a>
+			</footer>
+			</fieldset>	
+		</form>
+	</body>
+</html>
+
